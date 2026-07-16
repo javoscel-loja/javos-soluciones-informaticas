@@ -19,6 +19,14 @@ header {
     padding: 40px 20px;
 }
 
+header img {
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
 header h1 {
     font-size: 38px;
     margin-bottom: 10px;
