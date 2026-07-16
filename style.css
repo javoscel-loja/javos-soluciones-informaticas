@@ -19,14 +19,6 @@ header {
     padding: 40px 20px;
 }
 
-header img {
-    width: 80%;
-    max-width: 900px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
 header h1 {
     font-size: 38px;
     margin-bottom: 10px;
@@ -100,10 +92,6 @@ footer {
 
 /* Diseño para celulares */
 @media (max-width: 600px) {
-
-    header img {
-        width: 100%;
-    }
 
     header h1 {
         font-size: 28px;
