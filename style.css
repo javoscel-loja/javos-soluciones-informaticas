@@ -1,1 +1,109 @@
+/* Configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
+body {
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background: #0b1f3a;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Menú */
+nav {
+    background: #1565c0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+}
+
+h2 {
+    color: #0b1f3a;
+    margin-bottom: 15px;
+}
+
+/* Tarjetas de servicios */
+.servicios {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    background: #eef4ff;
+    border-radius: 10px;
+}
+
+/* Pie de página */
+footer {
+    background: #0b1f3a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Diseño para celulares */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .servicios {
+        flex-direction: column;
+    }
+
+}
