@@ -35,7 +35,7 @@ header p {
 
 /* Menú */
 nav {
-    background: #1565c0;
+    background: #0d519f;
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -75,7 +75,7 @@ section {
 }
 
 h2 {
-    color: #273f5d;
+    color: #132e51;
     margin-bottom: 18px;
 }
 
@@ -101,11 +101,11 @@ h2 {
 .card-servicio:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 22px rgba(11, 31, 58, 0.12);
-    border-color: #3c6696;
+    border-color: #255fa1;
 }
 
 .card-servicio h3 {
-    color: #0b1f3a;
+    color: #295794;
     margin-bottom: 12px;
     font-size: 1.15rem;
 }
@@ -135,7 +135,7 @@ h2 {
     content: "✔";
     position: absolute;
     left: 0;
-    color: #1565c0;
+    color: #104e96;
     font-weight: bold;
 }
 
@@ -150,7 +150,7 @@ h2 {
 
 .btn-ver-licencia {
     background: #ffffff;
-    color: #1565c0;
+    color: #204a7a;
     border: 1px solid #1565c0;
     padding: 5px 12px;
     font-size: 0.8rem;
@@ -161,7 +161,7 @@ h2 {
 }
 
 .btn-ver-licencia:hover {
-    background: #1565c0;
+    background: #3e70aa;
     color: #ffffff;
 }
 
@@ -169,7 +169,7 @@ h2 {
 .btn-solicitar {
     display: block;
     text-align: center;
-    background-color: #1565c0;
+    background-color: #1659a5;
     color: white;
     padding: 12px 18px;
     border-radius: 6px;
@@ -183,8 +183,8 @@ h2 {
 }
 
 .btn-solicitar:hover {
-    background-color: #0d47a1;
-    box-shadow: 0 6px 14px rgba(13, 71, 161, 0.35);
+    background-color: #496da3;
+    box-shadow: 0 6px 14px rgba(83, 120, 177, 0.35);
     transform: translateY(-2px);
 }
 
@@ -250,7 +250,7 @@ h2 {
 }
 
 .modal-contenido h3 {
-    color: #0b1f3a;
+    color: #557cae;
     font-size: 1.4rem;
     margin-bottom: 4px;
 }
@@ -336,7 +336,7 @@ h2 {
 }
 
 .datos-contacto h4 {
-    color: #0b1f3a;
+    color: #475b75;
     font-size: 0.95rem;
     margin-bottom: 2px;
 }
