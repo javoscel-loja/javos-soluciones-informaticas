@@ -6,19 +6,15 @@
     <title>Javos Soluciones Informáticas</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <header>
-        <img src="img/encabezado.png" alt="JavosCel Soluciones Informáticas">
+        <img src="img/encabezado.png" alt="Javos Soluciones Informáticas">
         <p>Tecnología, soporte y soluciones digitales</p>
     </header>
 
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Servicios</a>
-        <a href="#">Proyectos</a>
-        <a href="#">Contacto</a>
+        <a href="#" id="btnNavContacto">Contactos 📱✉️🌐</a>
     </nav>
 
     <main>
@@ -32,30 +28,68 @@
             </p>
         </section>
 
-        <section>
-            <h2>Nuestros servicios</h2>
+        <section id="servicios">
+            <h2>Nuestros productos y servicios</h2>
 
             <div class="servicios">
 
-                <article>
-                  <h3>💿 Software y Soluciones Digitales</h3>
-                <p>
-                Venta, instalación y configuración de software, herramientas ofimáticas y soluciones digitales para empresas y usuarios.
-                </p>
+                <!-- Tarjeta 1: Software -->
+                <article class="card-servicio">
+                    <h3>💿 Software y Soluciones Digitales</h3>
+                    <p class="servicio-intro">
+                        Venta de licencias genuinas, instalación y configuración completa para optimizar tu trabajo y estudios.
+                    </p>
+                    <ul class="lista-detalles">
+                        <li>
+                            <strong>Microsoft Office:</strong> Activación permanente de Office 2019, 2021 y 2024 (Word, Excel, PowerPoint y más).
+                            <div class="contenedor-ver">
+                                <button type="button" class="btn-ver-licencia" id="btnVerOffice">🔍 Ver licencias</button>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Nitro Pro PDF 14:</strong> Licencia para edición avanzada, conversión de archivos y firma de documentos digitales.
+                            <div class="contenedor-ver">
+                                <button type="button" class="btn-ver-licencia" id="btnVerNitro">🔍 Ver licencias</button>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Instalación y Configuración:</strong> Asistencia técnica remota o presencial garantizada.
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/+593968464314?text=Hola,%20deseo%20consultar%20sobre%20las%20licencias%20de%20Office%20y%20software" target="_blank" class="btn-solicitar">Comprar licencia</a>
                 </article>
 
-                <article>
+                <!-- Tarjeta 2: Soporte -->
+                <article class="card-servicio">
                     <h3>🛠️ Soporte Técnico Informático</h3>
-                    <p>
-                          Mantenimiento, reparación, optimización y configuración de equipos de computación para usuarios y empresas.
+                    <p class="servicio-intro">
+                        Mantenimiento, reparación, optimización y configuración de equipos de computación para usuarios y empresas.
                     </p>
+                    <ul class="lista-detalles">
+                        <li><strong>Hardware:</strong> Mantenimiento preventivo, correctivo y cambio de piezas.</li>
+                        <li><strong>Optimización:</strong> Formateo, limpieza profunda de virus y aceleración del sistema.</li>
+                        <li><strong>Seguridad:</strong> Diagnóstico técnico y respaldo seguro de tu información.</li>
+                    </ul>
+                    
+                    <div class="contenedor-ver-soporte">
+                        <button type="button" class="btn-ver-licencia" id="btnVerSoporte">🔍 Ver galería de trabajos</button>
+                    </div>
+
+                    <a href="https://wa.me/+593968464314?text=Hola,%20necesito%20soporte%20técnico%20para%20un%20equipo" target="_blank" class="btn-solicitar">Solicitar soporte</a>
                 </article>
 
-                <article>
+                <!-- Tarjeta 3: Educación -->
+                <article class="card-servicio">
                     <h3>📚 Recursos Educativos Digitales</h3>
-                    <p>
-                        Diseño de materiales tecnológicos para docentes y estudiantes.
+                    <p class="servicio-intro">
+                        Diseño e implementación de materiales y entornos tecnológicos para docentes, instituciones y estudiantes.
                     </p>
+                    <ul class="lista-detalles">
+                        <li><strong>Material didáctico:</strong> Creación de recursos interactivos, multimedia y guías digitales.</li>
+                        <li><strong>Plataformas virtuales:</strong> Configuración y gestión de entornos de aprendizaje (Classroom, Moodle).</li>
+                        <li><strong>Capacitación:</strong> Asesoría en herramientas informáticas aplicadas a la enseñanza.</li>
+                    </ul>
+                    <a href="https://wa.me/+593968464314?text=Hola,%20me%20gustaría%20información%20sobre%20los%20recursos%20educativos" target="_blank" class="btn-solicitar">Ver recursos</a>
                 </article>
 
             </div>
@@ -64,9 +98,153 @@
 
     </main>
 
+    <!-- MODAL 1: MICROSOFT OFFICE -->
+    <div id="modalOffice" class="modal-galeria">
+        <div class="modal-contenido">
+            <span class="cerrar-modal" id="cerrarOffice">&times;</span>
+            <h3>Microsoft Office</h3>
+            <p class="modal-subtitulo">Versiones disponibles: 2019, 2021 y 2024 activación Anual</p>
+            
+            <div class="grid-modal-office">
+                <div class="tarjeta-modal-producto">
+                    <img src="img/Office2019.png" alt="Office 2019">
+                    <h4>Office 2019 Pro Plus</h4>
+                    <p>Ideal para equipos de recursos estándar. Activación Anual.</p>
+                </div>
+                <div class="tarjeta-modal-producto">
+                    <img src="img/Office2021.png" alt="Office 2021">
+                    <h4>Office 2021 Pro Plus</h4>
+                    <p>Diseño fluido, modo oscuro completo y máximo rendimiento en Win 10 y 11.</p>
+                </div>
+                <div class="tarjeta-modal-producto">
+                    <img src="img/Office2024.webp" alt="Office 2024">
+                    <h4>Office 2024 Pro Plus</h4>
+                    <p>La edición más reciente y optimizada con funciones de productividad avanzadas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2: NITRO PRO -->
+    <div id="modalNitro" class="modal-galeria">
+        <div class="modal-contenido">
+            <span class="cerrar-modal" id="cerrarNitro">&times;</span>
+            <h3>Nitro Pro PDF 14</h3>
+            <p class="modal-subtitulo">Suite completa para gestión y edición profesional de documentos PDF, activación permanente.</p>
+            
+            <div class="tarjeta-modal-producto vista-completa">
+                <img src="img/Nitro14.jpeg" alt="Nitro Pro PDF">
+                <h4>Nitro Pro Enterprise / Retail</h4>
+                <p>Edición directa de texto e imágenes en PDF, conversión limpia a Word y Excel, unión de archivos y validación con firma digital.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 3: TRABAJOS DE SOPORTE TÉCNICO -->
+    <div id="modalSoporte" class="modal-galeria">
+        <div class="modal-contenido">
+            <span class="cerrar-modal" id="cerrarSoporte">&times;</span>
+            <h3>Trabajos de Soporte y Mantenimiento</h3>
+            <p class="modal-subtitulo">Evidencias reales de servicio técnico preventivo, correctivo y ensamblaje</p>
+            
+            <div class="grid-modal-office">
+                <div class="tarjeta-modal-producto">
+                    <img src="img/limpieza1.jpeg" alt="Mantenimiento preventivo de hardware">
+                    <h4>Mantenimiento de Hardware</h4>
+                    <p>Limpieza profunda de componentes, cambio de pasta térmica y ensamblaje profesional.</p>
+                </div>
+                <div class="tarjeta-modal-producto">
+                    <img src="img/limpieza2.jpeg" alt="Optimización y formateo">
+                    <h4>Formateo y Optimización</h4>
+                    <p>Instalación limpia de sistemas operativos, drivers certificados y configuración rápida.</p>
+                </div>
+                <div class="tarjeta-modal-producto">
+                    <img src="img/limpieza3.jpeg" alt="Diagnóstico y reparación">
+                    <h4>Diagnóstico y Reparación</h4>
+                    <p>Detección de fallas físicas, rescate seguro de datos y repuestos originales.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 4: CONTACTOS -->
+    <div id="modalContacto" class="modal-galeria">
+        <div class="modal-contenido modal-contacto-ancho">
+            <span class="cerrar-modal" id="cerrarContacto">&times;</span>
+            <h3>Contactos📱</h3>
+            <p class="modal-subtitulo">Comunícate con nosotros por cualquiera de nuestros canales oficiales</p>
+            
+            <div class="canales-contacto">
+                <a href="https://wa.me/593999999999?text=Hola,%20deseo%20más%20información" target="_blank" class="tarjeta-contacto">
+                    <span class="icono-contacto">📱</span>
+                    <div class="datos-contacto">
+                        <h4>Celular / WhatsApp</h4>
+                        <p>0968464314</p>
+                    </div>
+                </a>
+
+                <a href="mailto:soporte@javos.com" class="tarjeta-contacto">
+                    <span class="icono-contacto">✉️</span>
+                    <div class="datos-contacto">
+                        <h4>Correo Electrónico</h4>
+                        <p>javier.c182@hotmail.com - javoscel@gmail.com</p>
+                    </div>
+                </a>
+
+                <a href="https://www.facebook.com/javier.celibeltran" target="_blank" class="tarjeta-contacto">
+                    <span class="icono-contacto">🌐</span>
+                    <div class="datos-contacto">
+                        <h4>Facebook</h4>
+                        <p>https://www.facebook.com/javier.celibeltran</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <p>© 2026 Javos Soluciones Informáticas</p>
     </footer>
+
+    <script>
+        const modalOffice = document.getElementById("modalOffice");
+        const modalNitro = document.getElementById("modalNitro");
+        const modalSoporte = document.getElementById("modalSoporte");
+        const modalContacto = document.getElementById("modalContacto");
+
+        const btnOffice = document.getElementById("btnVerOffice");
+        const btnNitro = document.getElementById("btnVerNitro");
+        const btnSoporte = document.getElementById("btnVerSoporte");
+        const btnNavContacto = document.getElementById("btnNavContacto");
+
+        const cerrarOffice = document.getElementById("cerrarOffice");
+        const cerrarNitro = document.getElementById("cerrarNitro");
+        const cerrarSoporte = document.getElementById("cerrarSoporte");
+        const cerrarContacto = document.getElementById("cerrarContacto");
+
+        // Abrir modales
+        btnOffice.addEventListener("click", () => modalOffice.style.display = "flex");
+        btnNitro.addEventListener("click", () => modalNitro.style.display = "flex");
+        btnSoporte.addEventListener("click", () => modalSoporte.style.display = "flex");
+        btnNavContacto.addEventListener("click", (e) => {
+            e.preventDefault();
+            modalContacto.style.display = "flex";
+        });
+
+        // Cerrar modales con cruz
+        cerrarOffice.addEventListener("click", () => modalOffice.style.display = "none");
+        cerrarNitro.addEventListener("click", () => modalNitro.style.display = "none");
+        cerrarSoporte.addEventListener("click", () => modalSoporte.style.display = "none");
+        cerrarContacto.addEventListener("click", () => modalContacto.style.display = "none");
+
+        // Cerrar si hacen clic afuera del cuadro
+        window.addEventListener("click", (e) => {
+            if (e.target === modalOffice) modalOffice.style.display = "none";
+            if (e.target === modalNitro) modalNitro.style.display = "none";
+            if (e.target === modalSoporte) modalSoporte.style.display = "none";
+            if (e.target === modalContacto) modalContacto.style.display = "none";
+        });
+    </script>
 
 </body>
 </html>
